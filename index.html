@@ -56,6 +56,22 @@
                     <a class="nav-link" href="contact.html">Biz bilan aloqa</a>
                 </li>
                 <li class="nav-item">
+			<script>
+				// Qidiruv tugmasini bosganingizda ishlaydi
+document.getElementById('search-button').addEventListener('click', function() {
+    var query = document.getElementById('search-input').value.toLowerCase(); // Qidiruv so'zi
+    var content = document.querySelectorAll('.searchable'); // Qidiriladigan elementlar
+
+    content.forEach(function(item) {
+        var text = item.textContent.toLowerCase(); // Matnni kichik harflarga o'tkazish
+        if (text.includes(query)) {
+            item.style.display = 'block'; // Agar matn topilsa, ko'rsatish
+        } else {
+            item.style.display = 'none'; // Agar matn topilmasa, yashirish
+        }
+    });
+});
+			</script>				
 <div class="search-container">
     <input type="text" id="search-input" placeholder="Ma′lumot qidirish..." />
     <button id="search-button">Qidirish</button>

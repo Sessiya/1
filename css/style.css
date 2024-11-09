@@ -1,0 +1,73 @@
+/* Bosh sahifa uslubi */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobil qurilmalar uchun uslub (max 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #portfolio img {
+        width: 100%;
+        height: auto;
+    }
+
+    #contact input, #contact textarea {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h2, h4 {
+        text-align: center;
+    }
+}
+
+/* Planshetlar va kichik kompyuterlar uchun uslub (max 1024px) */
+@media (max-width: 1024px) {
+    #portfolio .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-md-4 {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+/* Kompyuterlar uchun uslub */
+@media (min-width: 1025px) {
+    .col-md-4 {
+        width: 32%;
+        margin: 1%;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    h2, h4 {
+        text-align: left;
+    }
+}
+
+/* Xususiy holatlar (masalan, kichik ekranga moslashuv) */
+@media (max-width: 480px) {
+    .title-wrap h2 {
+        font-size: 20px;
+    }
+
+    .client-item img {
+        width: 100%;
+    }
+}
